@@ -5,6 +5,16 @@
 .DS_Store
 .*.swp
 *.pth
+*.pt
+*.ckpt
+*.onnx
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.log
+*.pid
 **/__pycache__/**
 .ipynb_checkpoints/
 datasets/data/
@@ -15,3 +25,17 @@ experiment-*
 .mypy_cache/*
 not_tracked_dir/
 .vscode
+README_LOCAL.md
+
+# Local datasets, checkpoints, inference outputs, and UI artifacts.
+.idea/
+coco/
+data/
+flagged/
+output/
+output_2/
+test/
+x/
+experiments/runs/
+experiments/*.log
+experiments/*.pid

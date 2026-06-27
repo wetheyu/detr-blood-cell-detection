@@ -1,0 +1,19 @@
+name: detr-blood-cell
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pytorch=1.9
+  - torchvision=0.10
+  - cpuonly
+  - scipy
+  - matplotlib
+  - pandas
+  - pip
+  - pip:
+      - pycocotools
+      - gradio
+      - onnx
+      - onnxruntime

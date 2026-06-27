@@ -1,0 +1,20 @@
+name: detr-gpu
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8
+  - pytorch=1.7.1
+  - torchvision=0.8.2
+  - cudatoolkit=10.1
+  - scipy
+  - matplotlib
+  - pandas
+  - pip
+  - pip:
+      - pycocotools
+      - gradio
+      - onnx
+      - onnxruntime
+      - opencv-python
+      - submitit

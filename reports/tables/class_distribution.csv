@@ -1,0 +1,9 @@
+﻿split,class,annotations
+train,cells,0
+train,Platelets,739
+train,RBC,8814
+train,WBC,789
+val,cells,0
+val,Platelets,76
+val,RBC,819
+val,WBC,72

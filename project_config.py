@@ -1,0 +1,21 @@
+from pathlib import Path
+
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+
+CLASSES = [
+    "cells",
+    "Platelets",
+    "RBC",
+    "WBC",
+]
+
+NUM_CLASSES = len(CLASSES)
+
+DEFAULT_COCO_PATH = PROJECT_ROOT / "coco"
+DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "output_2"
+DEFAULT_EXPERIMENTS_DIR = PROJECT_ROOT / "experiments" / "runs"
+DEFAULT_INITIAL_CHECKPOINT = PROJECT_ROOT / "detr-r50_4.pth"
+DEFAULT_BEST_RUN = "lr_low"
+DEFAULT_BEST_CHECKPOINT = DEFAULT_EXPERIMENTS_DIR / DEFAULT_BEST_RUN / "checkpoint_best.pth"
+DEFAULT_TRAINED_CHECKPOINT = DEFAULT_BEST_CHECKPOINT if DEFAULT_BEST_CHECKPOINT.exists() else DEFAULT_OUTPUT_DIR / "checkpoint.pth"

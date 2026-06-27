@@ -1,0 +1,22 @@
+python main.py --batch_size 6 --no_aux_loss --eval --resume 'D:\DETR\detr\output_2\checkpoint.pth' --coco_path 'D:\DETR\detr\coco'
+
+-i https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn
+
+
+Averaged stats: class_error: 8.33  loss: 0.9200 (0.9120)  loss_ce: 0.2286 (0.2337)  loss_bbox: 0.2458 (0.2466)  loss_giou: 0.4243 (0.4317)  loss_ce_unscaled: 0.2286 (0.2337)  class
+_error_unscaled: 2.8986 (4.0863)  loss_bbox_unscaled: 0.0492 (0.0493)  loss_giou_unscaled: 0.2122 (0.2159)  cardinality_error_unscaled: 12.5000 (12.2436)
+Accumulating evaluation results...
+DONE (t=0.19s).
+IoU metric: bbox
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.488
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.856
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.517
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.217
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.539
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.452
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.341
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.554
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.363
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.634
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.526

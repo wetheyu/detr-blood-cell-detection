@@ -1,0 +1,19 @@
+{
+  "name": "query_150",
+  "description": "Object query number ablation with 150 queries.",
+  "args": {
+    "epochs": 50,
+    "batch_size": 2,
+    "lr_drop": 15,
+    "early_stop_patience": 12,
+    "early_stop_min_delta": 0.001,
+    "lr": 0.0001,
+    "lr_backbone": 0.00001,
+    "num_queries": 150,
+    "allow_mismatched_checkpoint": true,
+    "resume": "./detr-r50_4.pth",
+    "coco_path": "./coco",
+    "output_dir": "./experiments/runs/query_150",
+    "device": "cuda"
+  }
+}

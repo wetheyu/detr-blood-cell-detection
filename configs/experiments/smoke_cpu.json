@@ -1,0 +1,16 @@
+{
+  "name": "smoke_cpu",
+  "description": "Small CPU smoke test to verify data, model, training, and evaluation loops.",
+  "args": {
+    "epochs": 1,
+    "lr_drop": 1,
+    "batch_size": 1,
+    "num_workers": 0,
+    "train_limit": 8,
+    "val_limit": 8,
+    "no_aux_loss": true,
+    "resume": "./detr-r50_4.pth",
+    "coco_path": "./coco",
+    "output_dir": "./experiments/runs/smoke_cpu"
+  }
+}
